@@ -1,0 +1,3 @@
+[submodule "builder"]
+	path = builder
+	url = https://git.oschina.net/cnperl/dinp-builder.git
