@@ -9,4 +9,5 @@ WORKDIR $GOPATH/src/github.com/dinp/builder/
 COPY app.conf $GOPATH/src/github.com/dinp/builder/conf/app.conf
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
+RUN ln -s /lib/x86_64-linux-gnu/libdevmapper.so.1.02.1 /lib/x86_64-linux-gnu/libdevmapper.so.1.02
 CMD ["/run.sh"]
