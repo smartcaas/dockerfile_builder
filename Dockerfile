@@ -1,7 +1,7 @@
 FROM golang:1.6
 RUN mkdir -p $GOPATH/src/github.com/dinp \
 && cd $GOPATH/src/github.com/dinp \
-&& git clone https://github.com/wangxiulun/builder.git \
+&& git clone https://github.com/smartcaas/builder.git \
 && cd builder \
 && go get ./... \
 && go build
