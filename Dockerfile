@@ -1,4 +1,4 @@
-FROM golang:1.4
+FROM golang:1.6
 RUN mkdir -p $GOPATH/src/github.com/dinp \
 && cd $GOPATH/src/github.com/dinp \
 && git clone https://github.com/wangxiulun/builder.git \
